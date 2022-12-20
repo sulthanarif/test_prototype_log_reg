@@ -1,0 +1,23 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTY2OTcwODgzMywiZXhwIjoxNjY5NzA4ODYzfQ.WCh86wk9EJ6Mc7AalqlHd0ZvgfcEfpjalK7qw7s_Esg
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Jonk Doe",
+  "email": "emailk1@email,com",
+  "password": "p1asksword",
+  "confPass": "p1ashksword"
+}
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "email": "emailk1@email,com",
+  "password": "p1asksword"
+}
